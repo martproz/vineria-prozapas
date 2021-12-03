@@ -1,0 +1,150 @@
+/*HERO SECTION*/
+/*Encabezados*/
+.h1_turquesa {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:#00868b;
+  text-align: center;
+}
+.h1_rojo {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:#8b0000;
+  text-align: center;
+}
+.h1_azul {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:rgb(138, 43, 226);
+  text-align: center;
+}
+.h1_verde {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color: rgb(0, 128, 0);
+  text-align: center;
+}
+h2 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color:rgb(139, 0, 139);
+  text-align: center;
+}
+/*Párrafos*/
+.parr {
+    display: block;
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*Fondo*/
+body {
+  background-color: rgb(197, 189, 170);
+}
+/*Imágenes*/
+img {
+    display: block;
+    max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+/*MENU*/
+.menu {
+  background-color: rgb(175, 76, 122); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 16px;
+}
+.menu__item a {
+  text-decoration: none;
+  color: white;
+} 
+
+/*MAIN*/
+/*Contenedor principal de las cuatro imágenes*/
+.wrapper {
+  display: grid;
+  grid-template-areas:
+  "one two"
+  "three four";
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  grid-auto-rows: auto;
+  margin: 10px;
+}
+
+/*Ítems del contenedor*/
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.four {
+  grid-area: four;
+}
+
+/*Botón "comprar"*/
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*Esto centra el botón "comprar" debajo de la imagen*/
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
