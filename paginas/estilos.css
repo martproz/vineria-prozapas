@@ -1,11 +1,10 @@
-@font-face {
-  font-family: classicloud;
-  src: url("/assets/classicloud.ttf");
-}
-
-
 /*HERO SECTION*/
 /*Encabezados*/
+@font-face {
+  font-family: Classicloud;
+  src: url("/paginas/Classicloud.ttf");
+}
+
 .h1_turquesa {
   display: block;
   font-size: 2em;
@@ -17,8 +16,9 @@
   color:#00868b;
   text-align: center;
 }
+
 .h1_rojo {
-  font-family: classicloud;
+  font-family: Classicloud;
   display: block;
   font-size: 2em;
   margin-top: 0.67em;
@@ -219,3 +219,33 @@ footer{
   grid-area: four;
 }
 }
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    grid-auto-rows: auto auto auto auto;
+    margin: 10px;
+  }
+  
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+}
+
+
