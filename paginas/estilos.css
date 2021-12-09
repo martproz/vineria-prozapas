@@ -199,7 +199,7 @@ footer{
     align-items: center;
     padding: 50px 0px;
 }
---aca arranca reponsive--
+/*Aquí arranca responsive*/
 @media only screen and (max-width: 600px) {
 
 .wrapper {
@@ -211,7 +211,7 @@ footer{
   "four";
   grid-template-columns: auto auto;
   grid-gap: 10px;
-  grid-auto-rows: auto auto; --agregar al otro auto auto--
+  grid-auto-rows: auto auto; 
   margin: 10px;
 }
 
