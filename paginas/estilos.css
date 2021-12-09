@@ -137,7 +137,7 @@ img {
   text-decoration: none;
   color: white;
 } 
-
+/*Animación: cambio  de color menú*/
 .menu:hover{
   animation-name: background-color;
   animation-duration: 500ms;
