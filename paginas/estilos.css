@@ -1,8 +1,16 @@
+
 /*HERO SECTION*/
 /*Encabezados*/
 @font-face {
   font-family: Classicloud;
   src: url("/assets/Classicloud.ttf");
+}
+
+fieldset {
+  border: 3px solid #000;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  width: 400px;
+  margin: auto;
 }
 
 .h1_turquesa {
@@ -64,13 +72,14 @@
 }
 .h1_azul {
   display: block;
+  border:rgb(0, 128, 0);
   font-size: 2em;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
-  color:rgb(138, 43, 226);
+  color: rgba(255,255,255, 0.9);
   text-align: center;
 }
 .h1_verde {
@@ -257,5 +266,34 @@ footer{
     grid-area: four;
   }
 }
+/*FORMULARIO*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+}
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #C5BDAA;
+  padding: 20px;
+}
 
