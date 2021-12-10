@@ -1,0 +1,67 @@
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git status
+En la rama master
+Tu rama está detrás de 'origin/master' por 2 commits, y puede ser avanzada rápido.
+  (usa "git pull" para actualizar tu rama local)
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+        modificado:     paginas/contacto.html
+        modificado:     paginas/estilos.css
+        modificado:     paginas/nosotros.html
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+        img/extras/
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git add .
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git status
+En la rama master
+Tu rama está detrás de 'origin/master' por 2 commits, y puede ser avanzada rápido.
+  (usa "git pull" para actualizar tu rama local)
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+        nuevo archivo:  img/extras/uva_loca.png
+        modificado:     paginas/contacto.html
+        modificado:     paginas/estilos.css
+        modificado:     paginas/nosotros.html
+
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git commit -m "cambios form nosotros"
+[master 3515bb2] cambios form nosotros
+ 4 files changed, 155 insertions(+), 78 deletions(-)
+ create mode 100644 img/extras/uva_loca.png
+ rewrite paginas/contacto.html (65%)
+ rewrite paginas/nosotros.html (82%)
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git push -u origin
+To https://github.com/martproz/vineria-prozapas
+ ! [rejected]        master -> master (non-fast-forward)
+error: falló el push de algunas referencias a 'https://github.com/martproz/vineria-prozapas'
+ayuda: Actualizaciones fueron rechazadas porque la punta de tu rama actual está
+ayuda: detrás de su contraparte remota. Integra los cambios remotos (es decir
+ayuda: 'git pull ...') antes de hacer push de nuevo.
+ayuda: Mira 'Note about fast-forwards' en 'git push --help' para más detalles.
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git push -f origin master
+Contando objetos: 9, listo.
+Delta compression using up to 4 threads.
+Comprimiendo objetos: 100% (8/8), listo.
+Escribiendo objetos: 100% (9/9), 11.98 KiB | 1.50 MiB/s, listo.
+Total 9 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/martproz/vineria-prozapas
+ + 23b84bb...3515bb2 master -> master (forced update)
+antonieta@dell-antonieta:~/Escritorio/vineria-baco$ git log
+commit 3515bb2f39ae0d9517ad6218bb599867be325a35 (HEAD -> master, origin/master)
+Author: martproz <martinprozapas@gmail.com>
+Date:   Fri Dec 10 17:40:57 2021 -0300
+
+    cambios form nosotros
+
+commit 8a7892313a7c65e875e06e09dc1263739ef13f97 (gradiente)
+Author: martproz <martinprozapas@gmail.com>
+Date:   Fri Dec 10 15:49:49 2021 -0300
+:
