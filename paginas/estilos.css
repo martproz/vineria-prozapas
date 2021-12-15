@@ -1,127 +1,11 @@
-
-/*HERO SECTION*/
-/*Encabezados*/
-@font-face {
-  font-family: Classicloud;
-  src: url("/assets/Classicloud.ttf");
+/* Barra navegación */
+.logo {
+    width: 30px;
+  }
+.navbar-custom {
+    color: #AAB2C5;
 }
-
-fieldset {
-  border: 3px solid #000;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  width: 400px;
-  margin: auto;
-}
-
-.h1_turquesa {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color:#00868b;
-  text-align: center;
-}
-
-.h1_rojo {
-  font-family: Classicloud;
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color:#8b0000;
-  text-align: center;
-}
-.h1_blanco {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color:rgb(238, 237, 196);
-  text-align: center;
-}
-.h1_rosado {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color:rgb(157,92,117);
-  text-align: center;
-}
-.h1_especial {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color:rgb(247, 231, 206);
-  text-align: center;
-}
-.h1_azul {
-  display: block;
-  border:rgb(0, 128, 0);
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color: rgba(255,255,255, 0.9);
-  text-align: center;
-}
-.h1_verde {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color: rgb(0, 128, 0);
-  text-align: center;
-}
-h2 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-  color:rgb(139, 0, 139);
-  text-align: center;
-}
-/*Párrafos*/
-.parr {
-    display: block;
-    font-size: 18px;
-    color: black;
-    text-align: justify;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-/*Fondo*/
-body {
-  background-color: rgb(197, 189, 170);
-  margin: 0;
-}
-
-/*Imágenes*/
+/* Imágenes vinos en index */
 img {
     display: block;
     max-width: 500px;
@@ -130,170 +14,209 @@ img {
     height: auto;
     margin: auto;
 }
-/*MENU*/
-.menu {
-  background-color: rgb(175, 76, 122); 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: monospace;
-  font-size: 16px;
-}
-.menu__item a {
-  text-decoration: none;
-  color: white;
-} 
-/*Animación: cambio  de color menú*/
-.menu:hover{
-  animation-name: background-color;
-  animation-duration: 500ms;
-}
-@keyframes background-color {
-  100% {
-    background-color: #4791d0; 
-  }
-}
-/*MAIN*/
-/*Contenedor principal de las cuatro imágenes*/
-.wrapper {
-  display: grid;
-  grid-template-areas:
-  "one two"
-  "three four";
-  grid-template-columns: auto;
-  grid-gap: 10px;
-  grid-auto-rows: auto;
-  margin: 10px;
+/* Background de todo el sitio */
+body {
+    background-color: rgb(197, 189, 170);
+    margin: 0;
 }
 
-/*Ítems del contenedor*/:
-.one {
-  grid-area: one;
-}
-.two {
-  grid-area: two;
-}
-.three {
-  grid-area: three;
-}
-.four {
-  grid-area: four;
-}
-
-/*Botón "comprar"*/
-button {
-    background-color: #4CAF50; 
-    background: linear-gradient(70deg, black, white);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
-/*Esto centra el botón "comprar" debajo de la imagen*/
-.centrado {
-  display: flex;
-  justify-content: center;
-}
-
-/*FOOTER*/
-footer{
+/* Botón "comprar" en index */
+.comp {
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 50px 0px;
-}
-/*Aquí arranca responsive*/
-@media only screen and (max-width: 600px) {
-
-.wrapper {
-  display: grid;
-  grid-template-areas:
-  "one"
-  "two"
-  "three"
-  "four";
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-  grid-auto-rows: auto auto; 
-  margin: 10px;
+    text-decoration: none;
 }
 
-.one {
-  grid-area: one;
+/* Encabezados */
+h1 {
+    font-family: 'Outfit', sans-serif;
+    color:#8b0000;
 }
-.two {
-  grid-area: two;
-}
-.three {
-  grid-area: three;
-}
-.four {
-  grid-area: four;
-}
+h2 {
+    font-family: 'Outfit', sans-serif;
+    color:#8b0000; 
 }
 
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    display: grid;
-    grid-template-areas:
-    "one"
-    "two"
-    "three"
-    "four";
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    grid-auto-rows: auto auto auto auto;
-    margin: 10px;
+/* Formulario */
+.cont-form {
+    background-color: rgb(197, 189, 170);
+    margin: 0; 
+}
+
+/* Comienzo sección "NOSOTROS" */
+
+/* "Acerca de nosotros" */
+.section_title {
+    margin-bottom: 7px;
+    padding-left: 7px;
+    font-seize: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    border-left: 3px solid #bfa67a;
+    font-seize: 700;
+    font-family: tahoma;
+}
+/* "Somos creadores" */
+.section_main_title {
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 1.27;
+    font-weight: 300;
+}
+/* Recuadro uva loca */
+.about-box {
+    -webkit-box-shadow: 0 0 0 10px #000000 inset;
+    box-shadow: 0 0 0 10px #000000 inset;
+    margin-top: 0;
+    margin-right: 0;
+    position: relative;
+    display: block;
+}
+/* Animación uva loca */
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+  }
+div.slide-left div.inner {
+    animation: slide-left 2s;
+    margin-top:0%;
   }
   
-  .one {
-    grid-area: one;
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
   }
-  .two {
-    grid-area: two;
-  }
-  .three {
-    grid-area: three;
-  }
-  .four {
-    grid-area: four;
-  }
+/* Responsive para animación uva loca */
+/* Iphone 5/SE */
+@media only screen and (max-width: 568px) {
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+    }
+div.slide-left div.inner {
+    animation: slide-left 2s;
+    margin-top:0%;
+    }
+    
+    @keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+    
+    to {
+        margin-left: 0%;
+    }
+    }
+/* Moto G4, Galaxy S5 */
+@media only screen and (max-width: 640px) {
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+    }
+div.slide-left div.inner {
+    animation: slide-left 2s;
+    margin-top:0%;
+    }
+    
+    @keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+    
+    to {
+        margin-left: 0%;
+    }
+    }
+/* iPhone 6, 7, 8 */
+    @media only screen and (max-width: 667px) {
+    div.slide-left {
+        width:100%;
+        overflow:hidden;
+        }
+    div.slide-left div.inner {
+        animation: slide-left 2s;
+        margin-top:0%;
+        }
+        
+        @keyframes slide-left {
+        from {
+            margin-left: 100%;
+        }
+        
+        to {
+            margin-left: 0%;
+        }
+        }
+/* Pixel 2 */
+    @media only screen and (max-width: 731px) {
+    div.slide-left {
+        width:100%;
+        overflow:hidden;
+        }
+    div.slide-left div.inner {
+        animation: slide-left 2s;
+        margin-top:0%;
+        }
+        
+        @keyframes slide-left {
+        from {
+            margin-left: 100%;
+        }
+        
+        to {
+            margin-left: 0%;
+        }
+        }
+/* iPhone 6, 7, 8 Plus */
+        @media only screen and (max-width: 736px) {
+        div.slide-left {
+            width:100%;
+            overflow:hidden;
+            }
+        div.slide-left div.inner {
+            animation: slide-left 2s;
+            margin-top:0%;
+            }
+            
+            @keyframes slide-left {
+            from {
+                margin-left: 100%;
+            }
+            
+        to {
+            margin-left: 0%;
+        }
+        }
+/* Pixel 2XL */
+        @media only screen and (max-width: 823px) {
+        div.slide-left {
+            width:100%;
+            overflow:hidden;
+            }
+        div.slide-left div.inner {
+            animation: slide-left 2s;
+            margin-top:0%;
+            }
+            
+            @keyframes slide-left {
+            from {
+                margin-left: 100%;
+            }
+            
+            to {
+                margin-left: 0%;
+            }
+            }
 }
-/*FORMULARIO*/
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px;  
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px; 
-  margin-bottom: 16px; 
-  resize: vertical 
-}
+/* Fin sección "NOSOTROS" */
 
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #C5BDAA;
-  padding: 20px;
-}
 
