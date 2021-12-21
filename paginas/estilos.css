@@ -20,7 +20,7 @@ body {
     margin: 0;
 }
 
-/* Botón "comprar" en index */
+/* Botón "tintos disponibles" en index */
 .comp {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -67,6 +67,17 @@ h2 {
     line-height: 1.27;
     font-weight: 300;
 }
+p {
+        display: block;
+        font-size: 16px;
+        color: black;
+        text-align: justify;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+}
+
 /* Recuadro uva loca */
 .about-box {
     -webkit-box-shadow: 0 0 0 10px #000000 inset;
@@ -218,5 +229,3 @@ div.slide-left div.inner {
             }
 }
 /* Fin sección "NOSOTROS" */
-
-
