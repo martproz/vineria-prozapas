@@ -1,0 +1,154 @@
+@charset "UTF-8";
+.bord {
+  border: 1px solid #black;
+}
+
+.img__v {
+  display: block;
+  max-width: 125px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.h1_blanco {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  color: #eeedc4;
+  text-align: center; }
+
+.card, .ucard {
+  background: orange;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.1); }
+
+.avatar, .ucard > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px; }
+
+.title, .ucard > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 12px;
+  opacity: 0.85; }
+
+.small {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.75; }
+
+.ucard {
+  max-width: 300px;
+  text-align: center; }
+
+.ucard__img {
+  opacity: 0.5; }
+
+/* Barra navegación */
+.logo {
+  width: 30px; }
+
+.navbar-custom {
+  color: #AAB2C5; }
+
+/* Imágenes vinos en index */
+img {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+  margin: auto; }
+
+/* Background de todo el sitio */
+body {
+  background-color: #c5bdaa;
+  margin: 0; }
+
+/* Botón "tintos disponibles" en index */
+.comp {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none; }
+
+/* Encabezados */
+h1 {
+  font-family: 'Outfit', sans-serif;
+  color: #8b0000; }
+
+h2 {
+  font-family: 'Outfit', sans-serif;
+  color: #8b0000; }
+
+/* Formulario */
+.cont-form {
+  background-color: #c5bdaa;
+  margin: 0; }
+
+/* Comienzo sección "NOSOTROS" */
+/* "Acerca de nosotros" */
+.section_title {
+  margin-bottom: 7px;
+  padding-left: 7px;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  border-left: 3px solid #bfa67a;
+  font-size: 700;
+  font-family: tahoma; }
+
+/* "Somos creadores" */
+.section_main_title {
+  margin-top: 0;
+  margin-bottom: 37px;
+  font-size: 30px;
+  line-height: 1.27;
+  font-weight: 300; }
+
+/* Dos párrafos con información */
+p {
+  display: block;
+  font-size: 16px;
+  color: black;
+  text-align: justify;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; }
+
+/* Recuadro uva loca */
+.about-box {
+  -webkit-box-shadow: 0 0 0 10px #000000 inset;
+  box-shadow: 0 0 0 10px #000000 inset;
+  margin-top: 0;
+  margin-right: 0;
+  position: relative;
+  display: block; }
+
+/* Animación uva loca */
+div.slide-left {
+  width: 100%;
+  overflow: hidden; }
+
+div.slide-left div.inner {
+  animation: slide-left 2s;
+  margin-top: 0%; }
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%; }
+  to {
+    margin-left: 0%; } }
+
+/*# sourceMappingURL=estilos.css.map */

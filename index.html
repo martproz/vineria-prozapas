@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Palabras claves -->
+    <meta name="description" content="Éste es un sitio web que vende vinos tintos, blancos, rosados y especiales, en Berisso, Buenos Aires, Argentina">
+    <meta name="keywords" content="Berisso, vino, tinto, blanco, rosado, especial">
     <!-- Tipografía -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,157 +14,158 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Link CSS-->
-    <link rel="stylesheet" href="./paginas/estilos.css">
+    <link rel="stylesheet" href="./sass/estilos.css">
     <!--Título-->
     <title>Vinería Baco</title>
   </head>
-  <header>
-    <h1 class="display-2 text-center">Vinería Baco</h1>
-    <!--Main -->
-    <!--NavBar-->
-    <nav class="resp">
-      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="./img/extras/uva_ic.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./paginas/nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://www.facebook.com/martin.prozapas">Facebook</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="https://www.instagram.com/elonofficiall/?hl=es">Instagram</a>
-              </li>
-            </ul>
+  <body>
+    <header>
+      <h1 class="display-2 text-center">Vinería Baco</h1>
+      <!--NavBar-->
+      <nav class="resp">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="./img/extras/uva_ic.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./paginas/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./paginas/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://www.facebook.com/martin.prozapas">Facebook</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://www.instagram.com/elonofficiall/?hl=es">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </nav>
+      <!--EndNavBar-->
+    </header>
+      <!--Main -->
+      <!-- Cards -->
+      <main>
+        <div class="wrapper">
+          <div class="one">
+            <a href="./paginas/vino-tinto.html">
+              <img width="150" height="70" alt="vino tinto" src="./img/tintos/tintos.jpg">
+            </a>
+            <span>
+              <div class="dropdown comp">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Tintos disponibles</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#">Cheval Des Andes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Caro</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Iscay</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Catena Zapata</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
+          </div>
+          <div class="two">
+            <a href="./paginas/vino-blanco.html">
+              <img width="150" height="70" alt="vino blanco" src="./img/blancos/blancos.jpg">
+            </a>
+            <span>
+              <div class="dropdown comp">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Blancos disponibles</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#">Pradorey Verdejo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Mar de Frades</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Cuatro Rayas Verdejo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Descomunal Verdejo</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
+          </div>
+          <div class="three">
+            <a href="./paginas/vino-rosado.html">
+              <img width="150" height="70" alt="vino rosado" src="./img/rosados/rosados.jpg">
+            </a>
+            <span>
+              <div class="dropdown comp">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Rosados disponibles</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#">El Esteco</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">La Mascota</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Petalo de Rosa</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Luigi Bosca</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
+          </div>
+          <div class="four">
+            <a href="./paginas/vino-especial.html">
+              <img width="150" height="70" alt="vino especial" src="./img/especiales/especiales.jpg">
+            </a>
+            <span>
+              <div class="dropdown comp">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Especiales disponibles</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="#">Amalaya Brut</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Escorihuela Gascon</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Producciones Rose</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Costa & Pampa</a>
+                  </li>
+                </ul>
+              </div>
+            </span>
           </div>
         </div>
-      </nav>
-    </nav>
-    <!--EndNavBar-->
-  </header>
-  <main>
-    <!-- Cards -->
-    <div class="container mt-4">
-      <div class="row ">
-        <div class="col-6">
-          <a href="./paginas/vino-tinto.html">
-            <img class="img-fluid" src="./img/tintos/tintos.jpg" alt="">
-          </a>
-          <span>
-            <div class="dropdown comp">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Tintos disponibles</button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" href="#">Cheval Des Andes</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Caro</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Iscay</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Catena Zapata</a>
-                </li>
-              </ul>
-            </div>
-          </span>
+        <!-- <div class="container mt-4"><div class="row "><div class="col-6"><a href="./paginas/vino-tinto.html"><img class="img-fluid" src="./img/tintos/tintos.jpg" alt=""></a><span><div class="dropdown comp"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Tintos disponibles</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Cheval Des Andes</a></li><li><a class="dropdown-item" href="#">Caro</a></li><li><a class="dropdown-item" href="#">Iscay</a></li><li><a class="dropdown-item" href="#">Catena Zapata</a></li></ul></div></span></div><div class="col-6"><a href="./paginas/vino-blanco.html"><img class="img-fluid" src="./img/blancos/blancos.jpg" alt=""></a><span><div class="dropdown comp"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Blancos disponibles</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Pradorey Verdejo</a></li><li><a class="dropdown-item" href="#">Descomunal Verdejo</a></li><li><a class="dropdown-item" href="#">Mar de Frades Albariño</a></li><li><a class="dropdown-item" href="#">Cuatro Rayas Verdejo</a></li></ul></div></span></div><div class="col-6"><a href="./paginas/vino-rosado.html"><img class="img-fluid" src="./img/rosados/rosados.jpg" alt=""></a><span><div class="dropdown comp"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Rosados disponibles</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Kaiken Estate Malbec</a></li><li><a class="dropdown-item" href="#">Punto Final Malbec</a></li><li><a class="dropdown-item" href="#">La Celia</a></li><li><a class="dropdown-item" href="#">Andeluna</a></li></ul></div></span></div><div class="col-6"><a href="./paginas/vino-especial.html"><img class="img-fluid" src="./img/especiales/especiales.jpg" alt=""></a><span><div class="dropdown comp"><button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Especiales disponibles</button><ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1"><li><a class="dropdown-item" href="#">Trumpeter Reserva</a></li><li><a class="dropdown-item" href="#">Vino dulce natural Lopez</a></li><li><a class="dropdown-item" href="#">El abuelo Marsala</a></li><li><a class="dropdown-item" href="#">Vino licoroso Don Bosco</a></li></ul></div></span></div></div> -->
+        <!-- EndCards -->
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> © 2021 Copyright: <a class="text-white" href="">MGP</a>
         </div>
-        <div class="col-6">
-          <a href="./paginas/vino-blanco.html">
-            <img class="img-fluid" src="./img/blancos/blancos.jpg" alt="">
-          </a>
-          <span>
-            <div class="dropdown comp">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Blancos disponibles</button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" href="#">Pradorey Verdejo</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Descomunal Verdejo</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Mar de Frades Albariño</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Cuatro Rayas Verdejo</a>
-                </li>
-              </ul>
-            </div>
-          </span>
-        </div>
-        <div class="col-6">
-          <a href="./paginas/vino-rosado.html">
-            <img class="img-fluid" src="./img/rosados/rosados.jpg" alt="">
-          </a>
-          <span>
-            <div class="dropdown comp">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Rosados disponibles</button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" href="#">Kaiken Estate Malbec</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Punto Final Malbec</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">La Celia</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Andeluna</a>
-                </li>
-              </ul>
-            </div>
-          </span>
-        </div>
-        <div class="col-6">
-          <a href="./paginas/vino-especial.html">
-            <img class="img-fluid" src="./img/especiales/especiales.jpg" alt="">
-          </a>
-          <span>
-            <div class="dropdown comp">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> Especiales disponibles</button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" href="#">Trumpeter Reserva</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Vino dulce natural Lopez</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">El abuelo Marsala</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">Vino licoroso Don Bosco</a>
-                </li>
-              </ul>
-            </div>
-          </span>
-        </div>
-      </div>
-      <!-- EndCards -->
-  </main>
-  <!-- Footer -->
-  <footer>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)"> © 2021 Copyright: <a class="text-white" href="">MGP</a>
-    </div>
-  </footer>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      </footer>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>

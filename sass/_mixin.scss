@@ -1,0 +1,18 @@
+/* MIXIN */
+$letra-esp: verdana;
+$bord-n: 6px solid black;
+
+
+@mixin letra-bord ($letra-esp,$bord-n){
+	font-family: $letra-esp;
+	border: $bord-n;
+}
+
+.letra-bord-arial {
+	@include letra-bord(arial,2px solid white);
+}
+
+.letra-bord-helvetica {
+	@include letra-bord(helvetica,$bord-n);
+}
+/* END MIXIN */

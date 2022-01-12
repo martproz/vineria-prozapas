@@ -1,0 +1,17 @@
+.ucard {
+    @extend .card;
+    max-width: 300px;
+    text-align: center;
+    > img {
+        @extend .avatar;
+    }
+    > h3 {
+        @extend .title;
+    }
+}
+.ucard__img {
+    opacity: 0.5;
+} 
+.ucard__img--sinop {
+    opacity: 0;
+}

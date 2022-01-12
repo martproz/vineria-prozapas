@@ -1,0 +1,215 @@
+@import 'mixin';
+@import 'base';
+@import 'usercard';
+
+
+//MAP-GET cambio colores h1 paginas 
+
+$color:  (
+    "tinto": rgb(139, 0, 0),
+    "blanco": rgb(238, 237, 196),
+    "rosado": rgb(157,92,117),
+    "especial": rgb(247, 231, 206),
+ );
+
+.h1__t {
+     color: map-get($color,tinto);
+ }
+
+.h1__b {
+    color: map-get($color,blanco);
+}
+.h1__r {
+    color: map-get($color,rosado);
+}
+
+.h1__e {
+   color: map-get($color,especial);
+}
+
+/* Borde "contacto" */
+.bord {
+    border: 6px solid black;
+    display:flex;
+    flex-direction: center;
+}
+// footer "contacto"
+.fc {
+    background-color: rgb(197, 189, 170);
+}
+// imagen fondo "contacto"
+.imbak {
+    background-image: url(../img/extras/wine-fields4.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    height: 100%;
+    width: 100%;
+}
+// labels formulario "contacto"
+label {
+    color: white;
+    font-weight: bold;
+}
+
+/* Barra navegación */
+.logo {
+    width: 30px;
+  }
+.navbar-custom {
+    color: #465d92;
+}
+/* Imágenes vinos en index */
+img {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+/* Background de todo el sitio */
+body {
+    background-color: rgb(197, 189, 170);
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+/* Botón "tintos disponibles" en index */
+.comp {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.comp2 {
+    margin-top: 55px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+/* Encabezados */
+h1 {
+    font-family: 'Outfit', sans-serif;
+    color:#8b0000;
+}
+h2 {
+    font-family: 'Outfit', sans-serif;
+    color:#8b0000; 
+}
+/* Formulario */
+.cont-form {
+    background-color: rgb(197, 189, 170);
+    margin: 0; 
+}
+/* Comienzo sección "NOSOTROS" */
+
+/* "Acerca de nosotros" */
+.section_title {
+    margin-bottom: 7px;
+    padding-left: 7px;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    border-left: 3px solid #bfa67a;
+    font-size: 700;
+    font-family: tahoma;
+}
+/* "Somos creadores" */
+.section_main_title {
+    margin-top: 0;
+    margin-bottom: 37px;
+    font-size: 30px;
+    line-height: 1.27;
+    font-weight: 300;
+}
+/* Dos párrafos con información */
+p {
+        display: block;
+        font-size: 16px;
+        color: black;
+        text-align: justify;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+}
+/* Recuadro uva loca */
+.about-box {
+    -webkit-box-shadow: 0 0 0 10px #000000 inset;
+    box-shadow: 0 0 0 10px #000000 inset;
+    margin-top: 0;
+    margin-right: 0;
+    position: relative;
+    display: block;
+}
+/* Animación uva loca */
+div.slide-left {
+    width:100%;
+    overflow:hidden;
+  }
+div.slide-left div.inner {
+    animation: slide-left 2s;
+    margin-top:0%;
+  }
+  
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+}
+/* Para que el footer quede abajo de todo */
+.tdo {
+     height: 20vh;
+}
+/* GRID INDEX y GRID PÁGINAS VINOS */
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "one two"
+    "three four";
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin: 10px;
+  }
+  
+  /*Ítems del contenedor*/
+  .one {
+    grid-area: one;
+  }
+  .two {
+    grid-area: two;
+  }
+  .three {
+    grid-area: three;
+  }
+  .four {
+    grid-area: four;
+  }
+
+@media only screen and (max-width:900px) {
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four";
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+    margin: 10px;
+  }
+}
+
+
