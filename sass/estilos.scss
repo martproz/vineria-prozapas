@@ -41,9 +41,7 @@ $color:  (
 .imbak {
     background-image: url(../img/extras/wine-fields4.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0%;
-    height: 100%;
-    width: 100%;
+    background-size: cover;
 }
 // labels formulario "contacto"
 label {
@@ -82,15 +80,6 @@ body {
     justify-content: center;
     text-decoration: none;
 }
-.comp2 {
-    margin-top: 55px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-
-
 
 /* Encabezados */
 h1 {
@@ -167,10 +156,7 @@ div.slide-left div.inner {
       margin-left: 0%;
     }
 }
-/* Para que el footer quede abajo de todo */
-.tdo {
-     height: 20vh;
-}
+
 /* GRID INDEX y GRID PÁGINAS VINOS */
 .wrapper {
     display: grid;
@@ -212,4 +198,101 @@ div.slide-left div.inner {
   }
 }
 
+@media only screen and (max-width:510px) {
+    .wrapper {
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four";
+        grid-template-columns: auto;
+        grid-gap: 10px;
+        grid-auto-rows: auto;
+        margin: 10px;
+      }
+      .one {
+        grid-area: one;
+        // width: 250px;
+        // overflow: hidden;
+      }
+      .two {
+        grid-area: two;
+        // width: 250px;
+        // overflow: hidden;
+      }
+      .three {
+        grid-area: three;
+        // width: 250px;
+        // overflow: hidden;
+      }
+      .four {
+        grid-area: four;
+        // width: 250px;
+        // overflow: hidden;
+      }
+    }
+/*FIN GRID DEL INDEX Y DE PÁGINAS VINOS*/    
 
+/*REGULACIÓN RESPONSIVE PARA "CONTACTO"*/
+#footer {
+    height: 20px;
+}
+#content {
+    min-height: calc(100vh - 40px);
+}
+#header {
+    height: 20px;
+}
+/*REGULACIÓN RESPONSIVE PARA "NOSOTROS"*/
+#footer__nosotros {
+    height: 56px!important;
+    margin-top: 125px;
+}
+#content__nosotros {
+    min-height: calc(100vh - 40px);
+}
+#header__nosotros {
+    height: 20px;
+}
+
+
+@media only screen and (min-width:768px) {
+    #footer__nosotros {
+        height: 25vh;
+    }
+    #content__nosotros {
+        min-height: 50vh;
+    }
+    #header__nosotros {
+        height: 25vh;
+    }
+    
+}
+@media only screen and (min-width:992px) {
+    #footer__nosotros {
+        height: 30vh;
+    }
+    #content__nosotros {
+        min-height: 40vh;
+    }
+    #header__nosotros {
+        height: 30vh;
+    }
+    
+}
+/*FIN REGULACIÓN RESPONSIVE PARA "NOSOTROS"*/
+
+.reducida {
+    display: none;
+}
+
+
+@media only screen and (max-width:510px) {
+    .normal {
+        display: none;
+    }
+    .reducida {
+        display: block;
+    }
+}
